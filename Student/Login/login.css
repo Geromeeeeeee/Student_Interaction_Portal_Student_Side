@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#login{
+    border-radius: 25px;
+    background-color: #b8cfce71;
+    box-shadow: 0px 0px 15px 0px rgba(68,68,78,0.5);
+    justify-content: space-between;
+}
+
+#login, #loginForm, #textBox, #loginButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body, #login #title{
+    display: grid;
+    place-items: center;
+}
+
+#login #title{
+    font-family:'Poppins';
+    font-weight: bolder;
+    color: #222831b5;
+    height: 35%;
+    width: 100%;
+    padding-top: 5vh;
+}
+
+#loginBox{
+    width: 100%;
+    height: 65%;
+}
+
+#loginForm{
+    justify-content:space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#textBox{
+    justify-content: center;
+    gap: 5vh;
+    width: 100%;
+    height: 50%;
+}
+
+.textBox, .loginButton{
+    width:75%;
+    height: 25%;
+    border: transparent;
+}
+
+.textBox{
+    border-radius: 10px;
+    padding-left: 2.5vh;
+}
+
+.textBox:active{
+    border: 1px solid #44444e9e;
+}
+
+.loginButton{
+    border-radius: 15px;
+    background-color: #44444e9e;
+    color: white;
+}
+
+#loginButton{
+    justify-content: center;
+    gap: 2.5vh;
+    width: 100%;
+    height:50%;
+}
+
+#forgotPass{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: small;
+    color: grey;
+    font-weight: light;
+}
+
+@media (max-width:767px){
+    #login{
+        width: 70%;
+        height: 50vh;
+    }
+    #login #title{
+        height: 40%;
+        padding-top: 5vh;
+    }
+    #title p{
+        font-size: 30px;
+    }
+    #textBox{
+        gap: 3vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #login{
+        width: 50%;
+        height: 60vh;
+    }
+    #login #title{
+        height: 40%;
+        padding-top: 5vh;
+    }
+    #title p{
+        font-size: 45px;
+    }
+    #textBox{
+        gap: 3vh;
+    }
+    .textBox{
+        font-size: 20px;
+    }
+    #loginButton{
+        padding-bottom: 2.5vh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    #login{
+        width: 30%;
+        height: 70vh;
+    }
+}
+
+@media (min-width:1025px){
+    #login{
+        width: 25%;
+        height: 80vh;
+    }
+    #title p{
+        font-size: 45px;
+    }
+}
