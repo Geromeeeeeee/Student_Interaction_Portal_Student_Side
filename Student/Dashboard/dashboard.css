@@ -10,10 +10,13 @@ body{
     align-items: center;
     display: flex;
 }
-
-nav, #mainHead, .mainContent, #updates{
+nav, #mainHead, .mainContent{
     background: #B8CFCE;
     background: linear-gradient(0deg, rgba(184, 207, 206, 1) 0%, rgba(234, 239, 239, 1) 100%);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25), -5px -5px 5px 0px rgba(255,255,255,1);
+}
+#updates{
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25)inset, -5px -5px 5px 0px rgba(255,255,255,1)inset;
 }
 
 nav{
@@ -33,9 +36,7 @@ nav{
         border-radius: 15px;
         margin: 2.5vw;
     }
-    nav, #mainHead, .mainContent, #updates{
-        box-shadow: -5px -5px 10px 0px rgba(255,255,255), 5px 5px 5px 0px rgba(0,0,0,0.25);
-    }
+
     nav{
         height: 10vh;
     }
@@ -62,13 +63,12 @@ nav{
     .mainContent{
         width: 95%;
         height: 10vh;
-        background-color: #B8CFCE;
         border-radius: 15px;
     }
     #updates{
         width: 95%;
         min-height: 30vh;
-        background-color: gray;
+        max-height: 45vh;
         border-radius: 15px;
         margin-top: 8.5vw;
     }
@@ -137,6 +137,7 @@ nav{
     }
     #updates{
         height: 100%;
+        max-height: 75vh;
         margin: auto;
     }
 }
