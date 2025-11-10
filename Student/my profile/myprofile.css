@@ -47,4 +47,7 @@ nav, .mainCard{
     .personalInfo{
         margin-top: 2.5vh;
     }
+    .enrollmentInfo{
+        margin-bottom: 2.5vh;
+    }
 }
