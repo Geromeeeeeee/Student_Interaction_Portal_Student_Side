@@ -30,21 +30,26 @@ nav, header, .sectRight, #updates{
    }
    main{
     flex-direction: column;
+    width: 80vw;
+    height: 100vh;
    }
    header{
-    width:80vw;
+    width:95%;
     height: 22.5vh;
+    margin: 2.5vh;
    }
    section{
-    min-width: 80vw;
-    height: 72.5vh;
+    width: 95%;
+    height: 72.5%;
+    gap: 2.5vh;
+    margin: 2.5vh;
    }
    #sectRight{
     width: 60%;
     height: 100%;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 2.5vh;
+    gap: 3vh;
    }
    .sectRight{
     width: 100%;
@@ -52,8 +57,7 @@ nav, header, .sectRight, #updates{
    }
    #updates{
     width: 40%;
-    height: 67.5vh;
-    margin: 2.5vh 2.5vh 0 2.5vh;
+    height: 100%;
     align-self: flex-end;
    }
 }
