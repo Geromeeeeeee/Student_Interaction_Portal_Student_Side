@@ -5,9 +5,14 @@
 }
 body{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #E7F2EF;
     display: flex;
+    align-items: center;
+}
+section, main, #sectRight{
+    display: flex;
+    align-items: center;
 }
 nav, header, .sectRight, #updates{
     background: #B8CFCE;
@@ -15,17 +20,40 @@ nav, header, .sectRight, #updates{
     border-radius: 15px;
 }
 @media(min-width:768px) and (orientation:landscape){
-    body{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav{
-        width: 20%;
-        height: 95vh;
-    }
-    section{
-        width: 80%;
-        height: 95vh;
-    }
+   body{
+    justify-content: space-between;
+   }
+   nav{
+    width: 20%;
+    height: 95vh;
+    margin: 2.5vh;
+   }
+   main{
+    flex-direction: column;
+   }
+   header{
+    width:80vw;
+    height: 22.5vh;
+   }
+   section{
+    min-width: 80vw;
+    height: 72.5vh;
+   }
+   #sectRight{
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2.5vh;
+   }
+   .sectRight{
+    width: 100%;
+    height: 15vh;
+   }
+   #updates{
+    width: 40%;
+    height: 67.5vh;
+    margin: 2.5vh 2.5vh 0 2.5vh;
+    align-self: flex-end;
+   }
 }
