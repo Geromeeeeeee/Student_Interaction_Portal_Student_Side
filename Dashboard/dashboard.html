@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
 </head>
 <body>
-    <nav>
-    </nav>
-    <main>
-
-        <div id="mainHead"></div>
-
-        <div id="mainContent">
-            <div id="mainInfo">
-                <div class="mainContent"></div>
-                <div class="mainContent"></div>
-                <div class="mainContent"></div>
-                <div class="mainContent"></div>
+    <div class="div1 card">
+        <nav>
+            <div class="profilePic nav">
+                
             </div>
+            <div class="navLink nav">
+                <ul><a href="">Dashboard</a></ul>
+                <ul><a href="">My Profile</a></ul>
+                <ul><a href="">Pre-registration</a></ul>
+                <ul><a href="">Grades</a></ul>
+                <ul><a href="">Subjects</a></ul>
+                <ul><a href="">Account Settings</a></ul>
+                <ul id="logout"><a href="">Logout</a></ul>
+            </div>
+            <button onclick="show()">-</button>
+        </nav>
+    </div>
 
-            <div id="updates"></div>
-        </div>
+    <div class="div2 card">
+        <header></header>
+    </div>
 
-    </main>
+    <div class="div3 card">
+        <section class="sectionCard"></section>
+        <section class="sectionCard"></section>
+        <section class="sectionCard"></section>
+        <section class="sectionCard"></section>
+    </div>
+
+    <div class="div4 card">
+        <section class="updates">
+            
+        </section>
+    </div>
+
+    <script src="dashboard.js"></script>
 </body>
+</html>
