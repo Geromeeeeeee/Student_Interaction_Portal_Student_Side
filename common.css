@@ -69,9 +69,6 @@ nav{
         padding: 2.5vh;
         font-family: 'Inter';
     }
-    .nav{
-        outline:  dashed orange;
-    }
     .navLink a{
         text-decoration: none;
         color: #19183B;
@@ -87,5 +84,15 @@ nav{
     }
     button{
         display: none;
+    }
+    .profilePic{
+        display: grid;
+        place-items: center;
+    }
+    #square{
+        aspect-ratio: 1/1;
+        height: 100%;
+        border-radius: 50%;
+        outline: dashed grey;
     }
 }
