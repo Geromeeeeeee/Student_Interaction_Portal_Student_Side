@@ -17,6 +17,9 @@ nav{
 .navLink{
     font-family: 'Inter';
 }
+.material-symbols-outlined{
+    color:#19183b80;
+}
 @media (min-width:320px){
     nav{
         width: 100%;
@@ -25,6 +28,7 @@ nav{
         background: linear-gradient(0deg, rgba(184, 207, 206, 1) 0%, rgba(234, 239, 239, 1) 100%);
         position:relative;
         align-items: center;
+        display: flex;
     }
     .nav{
         display: none;
@@ -42,8 +46,8 @@ nav{
         gap: 2.5vh;
         position: absolute;
         width: 40%;
-        height: 85vh;
-        top: 15vh;
+        height: 87.5vh;
+        top: 12.5vh;
         left:0;
         background-color: green;
         padding: 2.5vh;
