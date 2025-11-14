@@ -14,7 +14,6 @@ section{
     }
     main{
         grid: 2;
-        background:orange;
         display: flex;
         flex-direction: column;
         height: auto;
