@@ -1,9 +1,48 @@
+@media (min-width:320px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 12.5vh 1fr;
+    }
+    main{
+        grid-template-rows: 2;
+        padding: 2.5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        height: auto;
+    }
+    main button{
+        background-color: #eeeeee;
+    }
+    main input, main button{
+        border-radius: 5px;
+    }
+    main input{
+        border: transparent;
+    }
+    main label, p{
+        font-family: 'Inter';
+    }
+    .profileEdit p{
+        display: none;
+    }
+    .header, h3{
+        font-family: 'Poppins';
+        color: rgb(25, 24, 59, 0.75);
+    }
+    .header, .profileEdit, .contactEdit{
+        border-bottom: 1px solid #222831;
+    }
+    section{
+        outline: dashed grey;
+    }
+}
 @media (min-width:768px) and (orientation: landscape){
     body{
         grid-template-columns: 1.25fr repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
-    aside, main, section{
+    aside, section{
         padding: 2.5vh;
     }
     main, .header, .form1, .form2, .contactEdit, .input, .passEdit, .form3, .form3Input {
@@ -12,16 +51,13 @@
     main, .contactEdit, .form2, .passEdit {
         flex-direction: column;
     }
-    .header, .profileEdit, .contactEdit{
-        border-bottom: 1px solid #222831;
-    }
     .header, .form1{
         align-items: center;
     }
     .form1, .form3Input{
         height: 100%;
     }
-    .form3Input, .input input, form button{
+    .form3Input, .input input{
         border-radius: 5px;
     }
     aside{
@@ -35,10 +71,10 @@
         border-radius: 22.5px;
         max-height: 100vh;
         overflow-y: auto;
+        gap: 2.5vh;
     }
-    .header, h3{
-        font-family: 'Poppins';
-        color: rgb(25, 24, 59, 0.75);
+    ::-webkit-scrollbar{
+        width: 10px;
     }
     .header{
         height: 15%;
@@ -48,15 +84,15 @@
         width: 100%;
         height: auto;
     }
-    .form1, .passEdit label, .form2{
-        font-family: 'Inter';
-    }
     .form1{
         justify-content: flex-end;
         width: 100%;
     }
     .profileEdit{
         height: 20%;
+    }
+    .profileEdit p{
+        display: inline-block;
     }
     form button{
         display: inline-block;
