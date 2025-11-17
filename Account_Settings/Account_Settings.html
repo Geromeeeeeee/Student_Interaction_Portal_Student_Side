@@ -49,15 +49,31 @@
             <h3>Contact Details</h3>
             <form action="" class="form2">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="">
-                <button type="submit">Edit</button>
+                <div class="input">
+                    <input type="email" name="email" id="">
+                    <button type="submit">Edit</button>
+                </div>
                 <label for="phone">Phone Number</label>
-                <input type="number" name="phone" id="">
-                <button type="submit">Edit</button>
+                <div class="input">
+                    <input type="number" name="phone" id="">
+                    <button type="submit">Edit</button>
+                </div>
             </form>
         </section>
-        <section>
-
+        <section class="passEdit">
+            <h3>Password</h3>
+            <label for="currentPass">Current Password</label>
+            <form action="" class="form3">
+                <input type="password" name="" id="currPass">
+            </form>
+            <label for="newPass">New Password</label>
+            <form action="" class="form3">
+                <div class="form3Input">
+                    <input type="password" name="newPass" id="">
+                    <input type="password" name="confirmPass" id="" placeholder="Confirm Password">
+                </div>
+                <button type="submit">Change Password</button>
+            </form>
         </section>
     </main>
 </body>
