@@ -3,11 +3,26 @@
         grid-template-columns: 1.25fr repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
-    aside, main{
+    aside, main, section{
         padding: 2.5vh;
     }
-    main, .header, .form1, .form2, .contactEdit {
+    main, .header, .form1, .form2, .contactEdit, .input, .passEdit, .form3, .form3Input {
         display: flex;
+    }
+    main, .contactEdit, .form2, .passEdit {
+        flex-direction: column;
+    }
+    .header, .profileEdit, .contactEdit{
+        border-bottom: 1px solid #222831;
+    }
+    .header, .form1{
+        align-items: center;
+    }
+    .form1, .form3Input{
+        height: 100%;
+    }
+    .form3Input, .input input, form button{
+        border-radius: 5px;
     }
     aside{
         grid-area: 1 / 1 / 2 / 2;
@@ -15,10 +30,11 @@
     main{
         grid-area: 1 / 2 / 2 / 6;
         margin: 2.5vh;
-        flex-direction: column;
         background: linear-gradient(0deg, rgba(184, 207, 206, 1) 0%, rgba(234, 239, 239, 1) 100%);
         box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25), -5px -5px 5px 0px rgba(255,255,255,1);
         border-radius: 22.5px;
+        max-height: 100vh;
+        overflow-y: auto;
     }
     .header, h3{
         font-family: 'Poppins';
@@ -26,31 +42,30 @@
     }
     .header{
         height: 15%;
-        align-items: center;
         padding-left: 2.5vh;
-        border-bottom: 1px solid #222831;
     }
     section{
         width: 100%;
-        height: 32.5%;
-        padding: 2.5vh;
+        height: auto;
+    }
+    .form1, .passEdit label, .form2{
+        font-family: 'Inter';
     }
     .form1{
         justify-content: flex-end;
         width: 100%;
-        height: 100%;
-        align-items: center;
-        font-family: 'Inter';
     }
     .profileEdit{
         height: 20%;
-        border-bottom: 1px solid #222831;
     }
-    form button, .form2 button{
-        display: block;
+    form button{
+        display: inline-block;
         background-color: #eeeeee;
-        width: 8vw;
-        border-radius: 5px;
+        min-width: 15%;
+        height: fit-content;
+        width: fit-content;
+        padding: 1vh;
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     }
     form p{
         margin-right: auto;
@@ -62,16 +77,43 @@
         border-radius: 50%;
         outline: dashed grey;
     }
-    .contactEdit{
-        flex-direction: column;
+    .contactEdit , .form3, .form3Input{
         gap: 2.5vh;
-        outline: dashed gray;
     }
     .form2{
-        flex-direction: column;
-        font-family: 'Inter';
+        color: #222831;
+    }
+    .form2 button, .input input{
+        height: 125%;
     }
     h3{
         font-family: 'Poppins';
+    }
+    .input{
+        justify-content: space-between;
+        margin-bottom: 2.5vh;
+    }.input input{
+        width: 40%;
+        border: none;
+    }
+    .form2 label, .passEdit label{
+        color: gray;
+    }
+    .passEdit label{
+        margin-top: 2.5vh;
+    }
+    .form3Input{
+        width: 60%;
+    }
+    .form3 input{
+        border: none;
+        width: 40%;
+        padding-left: 2.5vh;
+    }
+    .form3 button{
+        margin-left: auto;
+    }
+    #currPass{
+        height: 150%;
     }
 }
