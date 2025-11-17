@@ -8,19 +8,24 @@
         padding: 2.5vh;
         display: flex;
         flex-direction: column;
-        gap: 5vh;
+        gap: 2.5vh;
         height: auto;
     }
     main button{
         background-color: #eeeeee;
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        width: 25vw;
     }
-    main input, main button{
+    input, button{
         border-radius: 5px;
     }
-    main input{
+    input{
         border: transparent;
     }
-    main label, p{
+    .passEdit label{
+        margin-top: 2.5vh;
+    }
+    label, p{
         font-family: 'Inter';
     }
     .profileEdit p{
@@ -30,11 +35,23 @@
         font-family: 'Poppins';
         color: rgb(25, 24, 59, 0.75);
     }
-    .header, .profileEdit, .contactEdit{
+    .header, .contactEdit{
         border-bottom: 1px solid #222831;
     }
     section{
         outline: dashed grey;
+        padding: 2.5vh;
+    }
+    .form2 .input, .form3Input{
+        display: flex;
+    }
+    .form2 .input{
+        justify-content: space-between;
+    }
+    .form3Input{
+        display: flex;
+        gap: 2.5vh;
+        margin-bottom: 2.5vh;
     }
 }
 @media (min-width:768px) and (orientation: landscape){
@@ -71,7 +88,6 @@
         border-radius: 22.5px;
         max-height: 100vh;
         overflow-y: auto;
-        gap: 2.5vh;
     }
     ::-webkit-scrollbar{
         width: 10px;
@@ -88,12 +104,6 @@
         justify-content: flex-end;
         width: 100%;
     }
-    .profileEdit{
-        height: 20%;
-    }
-    .profileEdit p{
-        display: inline-block;
-    }
     form button{
         display: inline-block;
         background-color: #eeeeee;
@@ -101,17 +111,6 @@
         height: fit-content;
         width: fit-content;
         padding: 1vh;
-        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    }
-    form p{
-        margin-right: auto;
-    }
-    #picture{
-        aspect-ratio: 1/1;
-        height: 75%;
-        margin-right: 5vh;
-        border-radius: 50%;
-        outline: dashed grey;
     }
     .contactEdit , .form3, .form3Input{
         gap: 2.5vh;
