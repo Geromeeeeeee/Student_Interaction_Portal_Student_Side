@@ -69,12 +69,11 @@ main{
         width: 20%;
         height: fit-content;
     }
-    /* When the nav overlay (.show) is active, keep the button fixed
-       so it stays visually with the overlay instead of sliding with nav. */
+
     .show + button{
-        position: fixed;
-        top: 5vh;
-        left: 3vh;
+        position: relative;
+        top: 0;
+        left: 3.25vh;
         z-index: 1001;
         width: auto;
         background: transparent;
