@@ -16,6 +16,7 @@ section{
         padding: 2.5vh;
         gap: 2.5vh;
         font-family: Poppins;
+        color: rgb(25, 24, 59, 0.75);
     }
 }
 @media (min-width:768px) and (orientation:landscape){
