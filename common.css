@@ -48,16 +48,22 @@ nav{
         border: none;
         z-index: 2;
     }
+    nav button{
+        width: 20%;
+        height: fit-content;
+        position: fixed;
+    }
     .show{
         display: flex;
         flex-direction: column;
         gap: 2.5vh;
-        position: absolute;
+        position: fixed;
         width: 45%;
         height: 100vh;
         top: 0;
         left:0;
-        background: rgba(234, 239, 239);
+        background: rgba(234, 239, 239, 0.125);
+        backdrop-filter: blur(15px);
         padding: 15vh 2.5vh 2.5vh 2.5vh;
         box-shadow: 15px 5px 20px 0px rgba(0,0,0,0.25);
     }
