@@ -12,6 +12,11 @@ section{
     font-family: Inter;
     color: rgb(25, 24, 59, 0.75);
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+section h3{
+    margin-bottom: 2.5vh;
 }
 .enrollment-form{
     width: 100%;
