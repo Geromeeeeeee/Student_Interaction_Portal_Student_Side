@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="prereg.css">
+    <link rel="stylesheet" href="../common.css?v=1.01">
+    <link rel="stylesheet" href="prereg.css?v=1.02">
     <title>Pre Registration</title>
 </head>
 <body>
@@ -31,10 +31,30 @@
     </aside>
     <main>
         <section>
-            <h3>Status: </h3>
-            <div class="enrollment-form">
-                
-            </div>
+            <h1>Status: </h1>
+            <form action="" class="enrollment-form">
+                <legend>Student Information</legend>
+                <hr>
+                <label>Full Name</label>
+                <div class="full-name">
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                </div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="year-level">Year Level</label>
+                <input type="text" name="year-level" id="year-level" placeholder="Year Level">
+                <label for="program">Program</label>
+                <input type="text" name="program" id="program" placeholder="Program">
+
+                <legend>Academic Details</legend>
+                <hr>
+                <p>School Year: </p>
+                <p>Semester: </p>
+                <p>Status: </p>
+
+                <button class="enrollment-button"><a href="prereg_subjects.html">Next</a></button>
+            </form>
         </section>
     </main>
 </body>
